@@ -35,13 +35,13 @@ system. The python modules needed are few, and mostly comes bundled with standar
 installation; or you can install them (e.g.([numpy](https://pypi.python.org/pypi/numpy),
 [matplotlib](https://pypi.python.org/pypi/matplotlib/2.0.0rc1))) using `$sudo pip install <module>`.
 
-#### Linux
+### Linux
 
 This application is build and tested in Gnu-Linux OS ([Fedora](https://getfedora.org/)); but, there
 is no Fedora or Linux specific libraries are used. So, It should be installed natively on any
 Gnu-Linux OS, supporting GTK-3 UX. If there is any problem, [contact](#contact) me.
 
-#### Mac OS X
+### Mac OS X
 
 I have not tested it for [Mac](http://www.apple.com/macos/sierra/). But, mostly, you need GTK+
 obtained and build(see, [this](https://www.gtk.org/download/macos.php)).
@@ -51,15 +51,15 @@ Usage
 
 This Periodic Table can be used in multiple way.
 
-#### Elements
+### Elements
 Properties of all the elements can be viewed simply by clicking into its name.
 
-#### Vegards Law
+### Vegards Law
 Click on `utilities -> Vegards Law` to open up an window to put a binary alloy, as A50B50. It
 should work on ternary alloys too, but not tested. It also shows the variation of lattice
 parameters with fixed volume, helping the lattice parameter optimization.
 
-#### Plots
+### Plots
 Click on `Utility->Plot-><choose>` to plot standard atomic functionals like `Atomic Radius`, `Van
 der Waals Radius` etc.
 
