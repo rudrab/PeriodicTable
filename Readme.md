@@ -35,13 +35,13 @@ system. The python modules needed are few, and mostly comes bundled with standar
 installation; or you can install them (e.g.([numpy](https://pypi.python.org/pypi/numpy),
 [matplotlib](https://pypi.python.org/pypi/matplotlib/2.0.0rc1))) using `$sudo pip install <module>`.
 
-### Linux
+#### Linux
 
 This application is build and tested in Gnu-Linux OS ([Fedora](https://getfedora.org/)); but, there
 is no Fedora or Linux specific libraries are used. So, It should be installed natively on any
 Gnu-Linux OS, supporting GTK-3 UX. If there is any problem, [contact](#contact) me.
 
-### Mac OS X
+#### Mac OS X
 
 I have not tested it for [Mac](http://www.apple.com/macos/sierra/). But, mostly, you need GTK+
 obtained and build(see, [this](https://www.gtk.org/download/macos.php)).
