@@ -33,8 +33,7 @@ autogen.sh; make; sudo make install
 This code is build using `python-3` and `Gtk-3`. So, you must have these two installed in your
 system. The python modules needed are few, and mostly comes bundled with standard `python-3`
 installation; or you can install them (e.g.([numpy](https://pypi.python.org/pypi/numpy),
-[matplotlib](https://pypi.python.org/pypi/matplotlib/2.0.0rc1))) using `$sudo pip install
-<module>`.
+[matplotlib](https://pypi.python.org/pypi/matplotlib/2.0.0rc1))) using `$sudo pip install <module>`.
 
 #### Linux
 
