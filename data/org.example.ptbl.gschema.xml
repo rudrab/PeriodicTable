@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schemalist>
+  <schema path="/org/example/ptbl/" id="org.example.ptbl">
+    <key name='base-folder' type='s'>
+      <default>'/var/tmp/ptbl'</default>
+      <summary>Store Files added to MkBiB</summary>
+      <description>
+        Tell MkBiB where to store file
+      </description>
+    </key>
+  </schema>
+</schemalist>

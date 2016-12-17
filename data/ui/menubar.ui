@@ -1,0 +1,70 @@
+<interface>
+  <menu id='app-menu'>
+    <section>
+      <!--<item>-->
+        <!--<attribute name='label' translatable='yes'>_Utility</attribute>-->
+        <!--<attribute name='action'>app.utility</attribute>-->
+      <!--</item>-->
+    </section>
+    <section>
+      <item>
+        <attribute name='label' translatable='yes'>_About ptbl</attribute>
+        <attribute name='action'>app.about</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name='label' translatable='yes'>_Quit</attribute>
+        <attribute name='action'>app.quit</attribute>
+        <attribute name='accel'>&lt;Primary&gt;q</attribute>
+      </item>
+    </section>
+  </menu>
+  <menu id='menubar'>
+    <submenu>
+      <attribute name='label' translatable='yes'>_File</attribute>
+      <section>
+        <item>
+          <attribute name='label' translatable='yes'>_Open</attribute>
+          <attribute name='action'>win.open</attribute>
+          <attribute name='accel'>&lt;Primary&gt;o</attribute>
+        </item>
+        <item>
+          <attribute name='label' translatable='yes'>_Save</attribute>
+          <attribute name='action'>win.save</attribute>
+          <attribute name='accel'>&lt;Primary&gt;s</attribute>
+        </item>
+        <item>
+          <attribute name='label' translatable='yes'>Save _As</attribute>
+          <attribute name='action'>win.save-as</attribute>
+          <attribute name='accel'>&lt;Shift&gt;&lt;Primary&gt;S</attribute>
+        </item>
+        <item>
+          <attribute name='label' translatable='yes'>_Quit</attribute>
+          <attribute name='action'>app.quit</attribute>
+          <attribute name='accel'>&lt;Primary&gt;q</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu>
+      <attribute name='label' translatable='yes'>_Edit</attribute>
+      <section>
+        <item>
+          <attribute name='label' translatable='yes'>_Insert</attribute>
+          <attribute name='action'>win.insert</attribute>
+          <attribute name='accel'>&lt;Primary&gt;i</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu>
+      <attribute name='label' translatable='yes'>_Help</attribute>
+      <section>
+        <item>
+          <attribute name='label' translatable='yes'>_About</attribute>
+          <attribute name='action'>app.about</attribute>
+          <attribute name='accel'>&lt;Primary&gt;h</attribute>
+        </item>
+      </section>
+    </submenu>
+  </menu>
+</interface>

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Periodic Table
+Comment=Create, Edit and Manage BiBTeX file 
+Keywords=Editor; BiBTeX
+Exec=@PACKAGE@
+Icon=@PACKAGE@
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Utility;BibTex;Editor;
+StartupNotify=true
