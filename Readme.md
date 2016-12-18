@@ -73,11 +73,10 @@ My Other Apps
 =============
 See other apps I have developed:
 
-- [MkBiB](http://rudrab.github.io/mkbib/)
+- [MkBiB](http://rudrab.github.io/mkbib/): BiBTeX Manager
 
-- [Periodic Table](http://rudrab.github.io/PeriodicTable/)
+- [Periodic Table](http://rudrab.github.io/PeriodicTable/): Periodic Table and Extra
 
-- [Shadow](http://rudrab.github.io/Shadow/)
+- [Shadow](http://rudrab.github.io/Shadow/): Icon theme for Gnome desktop
 
-- [vimf90](http://rudrab.github.io/vimf90/)
-
+- [vimf90](http://rudrab.github.io/vimf90/): Firtran plugin for vim
