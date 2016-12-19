@@ -15,6 +15,7 @@ Many other utilities are on its way.
   - [Vegards Law](#vegard)
   - [Plots](#plot)
 - [Contact](#contact)
+- [Coffee and Cookies](#donate)
 - [My Other Apps](#apps)
 
 
@@ -67,6 +68,10 @@ der Waals Radius` etc.
 Contact
 =======
 The preferred way of contacting me is via [github project page](https://github.com/rudrab/PeriodicTable/issues)
+
+Coffee and Cookies
+==================
+If you <em>really</em> like _Periodic Table_ and found it usefull, please buy me a coffee using [PayPal](https://www.paypal.me/RudraBanerjee)
 
 
 My Other Apps
