@@ -90,14 +90,14 @@ class GridWindow(Gtk.ApplicationWindow):
         style_provider = Gtk.CssProvider()
         css = """
         #Halos{
-            background: #AC9B3B;
+            background: #ED7E46;
             border-radius: 5px;
             border-color: #000;
             margin: 2px;
             color: white;
             }
         #Halos:hover{
-            background:#D2BF59;
+            background:#FF9660;
                 }
         #PostT{
             background: #297852;
@@ -130,24 +130,24 @@ class GridWindow(Gtk.ApplicationWindow):
             background:#bd8ef2;
                 }
         #LanBut{
-            background: #C48207;
+            background: #B33E96;
             border-radius: 5px;
             border-color: #000;
             margin: 2px;
             color: white;
             }
         #LanBut:hover{
-            background:#EEA51F;
+            background:#CA5FAF;
                 }
         #ActBut{
-            background: #D53429;
+            background: #BF990F;
             border-radius: 5px;
             border-color: #000;
             margin: 2px;
             color: white;
             }
         #ActBut:hover{
-            background:#E75C51;
+            background:#E4BD2C;
                 }
         #EntGas{
             background: #9b9b9b;
@@ -170,14 +170,14 @@ class GridWindow(Gtk.ApplicationWindow):
             background:#FF8153;
                 }
         #AlkEat{
-            background: #DC305B;
+            background: #F44D52;
             border-radius: 5px;
             border-color: #000;
             margin: 2px;
             color: white;
             }
         #AlkEat:hover{
-            background:#EB4C74;
+            background:#FD6569;
                 }
         #TranMet{
             background: #92613E;
