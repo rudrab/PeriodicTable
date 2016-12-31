@@ -1,10 +1,10 @@
 # Periodic Table
+
 A modern Periodic Table, with latest update from [IUPAC](https://iupac.org/).
 
 It also contains utilities such as [Vegards's Law](http://journals.aps.org/pra/abstract/10.1103/PhysRevA.43.3161).
 Many other utilities are on its way.
 
-- [Introduction](#introduction)
 - [Install](#install)
   - [Dependencies](#dependencies)
     - [Linux](#linux)
