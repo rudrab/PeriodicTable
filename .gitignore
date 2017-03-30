@@ -17,3 +17,7 @@ ptbl/__pycache__/
 Makefile.in
 configure
 *.swp
+compile
+install-sh
+missing
+py-compile

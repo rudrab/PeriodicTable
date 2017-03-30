@@ -1,5 +1,5 @@
 [Desktop Entry]
-Version=1.0
+Version=@PACKAGE_VERSION@
 Name=Periodic Table
 Comment=Periodic Table; Vegard's Law
 Keywords=Periodic-Table

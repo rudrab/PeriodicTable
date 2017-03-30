@@ -55,7 +55,7 @@ class MessageDialog(Gtk.Window):
         dialog = Gtk.AboutDialog(program_name="Periodic Table", transient_for=self,
                                  name="About Periodic Table",
                                  comments=comments,
-                                 version= ptbl.__version__,
+                                 version= ptbl.version,
                                  copyright=copyright,
                                  license_type=Gtk.License.GPL_3_0,
                                  authors=(["Rudra Banerjee"]),
