@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from gi.repository import Gtk
 import sqlite3 as lite
 import sys
@@ -76,5 +77,3 @@ class plotter():
         canvas.set_size_request(400,400)
         sw.add_with_viewport(canvas)
         p_window.show_all()
-
-

@@ -1,11 +1,11 @@
 [Desktop Entry]
 Version=1.0
 Name=Periodic Table
-Comment=Create, Edit and Manage BiBTeX file 
-Keywords=Editor; BiBTeX
+Comment=Periodic Table; Vegard's Law
+Keywords=Periodic-Table
 Exec=@PACKAGE@
 Icon=@PACKAGE@
 Terminal=false
 Type=Application
-Categories=GNOME;GTK;Utility;BibTex;Editor;
+Categories=GNOME;GTK;Education;Chemistry;
 StartupNotify=true
