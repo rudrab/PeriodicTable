@@ -22,6 +22,26 @@ col = [['H', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'He
         "Rf", "Db", "Sg", "Bh", 'Hs', 'Mt', 'Ds', 'Rg', 'Cn', 'Nh', 'Fl', 'Mc', 'Lv', 'Ts', 'Og']
        ]
 
+full_col = ["Hydrogen"    , "Helium"      , "Lithium"     , "Beryllium"  , "Boron"        , "Carbon"        ,
+            "Nitrogen"    , "Oxygen"      , "Fluorine"    , "Neon"       , "Sodium"       , "Magnesium"     , "Aluminum"   ,
+            "Silicon"     , "Phosphorus	" , "Sulfur"      , "Chlorine"   , "Argon"        , "Potassium"     , "Calcium"    ,
+            "Scandium"    , "Titanium	"   , "Vanadium"    , "Chromium"   , "Manganese"    , "Iron"          , "Cobalt"     ,
+            "Nickel"      , "Copper"      , "Zinc"        , "Gallium"    , "Germanium"    , "Arsenic"       ,
+            "Selenium"    , "Bromine"     , "Krypton"     , "Rubidium"   , "Strontium"    , "Yttrium"       , "Zirconium"  ,
+            "Niobium"     , "Molybdenum"  , "Technetium"  , "Ruthenium"  , "Rhodium"      , "Palladium"     ,
+            "Silver"      , "Cadmium"     , "Indium"      , "Tin"        , "Antimony"     , "Tellurium"     , "Iodine"     ,
+            "Xenon"       , "Cesium"      , "Barium"      , "Lanthanum"  , "Cerium"       , "Praseodymium"  , "Neodymium"  ,
+            "Promethium"  , "Samarium"    , "Europium"    , "Gadolinium" , "Terbium"      , "Dysprosium"    ,
+            "Holmium"     , "Erbium"      , "Thulium"     , "Ytterbium"  , "Lutetium"     , "Hafnium"       ,
+            "Tantalum"    , "Tungsten"    , "Rhenium"     , "Osmium"     , "Iridium"      , "Platinum"      , "Gold"       ,
+            "Mercury"     , "Thallium"    , "Lead"        , "Bismuth"    , "Polonium"     , "Astatine"      , "Radon"      ,
+            "Francium"    , "Radium"      , "Actinium"    , "Thorium"    , "Protactinium" , "Uranium"       ,
+            "Neptunium"   , "Plutonium"   , "Americium"   , "Curium"     , "Berkelium"    , "Californium"   ,
+            "Einsteinium" , "Fermium"     , "Mendelevium" , "Nobelium"   , "Lawrencium"   , "Rutherfordium" ,
+            "Dubnium"     , "Seaborgium"  , "Bohrium"     , "Hassium"    , "Meitnerium"   , "Darmstadtium"  ,
+            "Roentgenium" , "Copernicum"  , "Nihonium"    , "Flerovium"  , "Moscovium"    , "Livermorium"   , "Tennessine" ,
+            "Oganesson"]
+
 class GridWindow(Gtk.ApplicationWindow):
     def __init__(self, app):
         Gtk.Window.__init__(self, application = app,
@@ -250,10 +270,12 @@ class GridWindow(Gtk.ApplicationWindow):
                     label.set_markup("<b>"+str(elems)+"</b>\n<small>"+str(el_count)+"</small>")
                     label.set_justify(2)
                     button[el_count].connect("clicked", elem_H.ElemWindow().on_info_clicked, str(el_count), css, namebutt)
+                    button[el_count].set_tooltip_text(full_col[el_count-1])
         empty = Gtk.Label("")
+        #  for i in range(120):
+          #  butto
         grid.attach(empty,0,7,1,1)
         self.add(grid)
-
 class ptbl(Gtk.Application):
 
     def __init__(self):

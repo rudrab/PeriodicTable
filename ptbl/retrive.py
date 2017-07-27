@@ -56,6 +56,7 @@ class plotter():
 
 
         # Plot
+        # plt.style.use('ptbl')
         p_window = Gtk.Window()
         p_window.set_default_size(750,500)
         p_header = Gtk.HeaderBar()
