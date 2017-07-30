@@ -19,8 +19,12 @@ Many other utilities are on its way.
 
 
 ## Install
+There are two versions available:
+- [Stable](https://github.com/rudrab/PeriodicTable/releases) Stable and tested. 
+- [Development](https://github.com/rudrab/PeriodicTable.git) Latest, but may not be greatest.
 
-Do it in standard Linux way:
+
+After downloading "Periodic Table", install it in standard Linux way:
 
 ```bash 
 autogen.sh; make; sudo make install
