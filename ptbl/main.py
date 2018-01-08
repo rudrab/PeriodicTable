@@ -109,105 +109,115 @@ class GridWindow(Gtk.ApplicationWindow):
 
         style_provider = Gtk.CssProvider()
         css = """
-        #Halos{
-            background: #ED7E46;
-            border-radius: 5px;
-            border-color: #000;
-            margin: 2px;
-            color: white;
-            }
-        #Halos:hover{
-            background:#FF9660;
-                }
-        #PostT{
-            background: #297852;
-            border-radius: 5px;
-            border-color: #000;
-            margin: 2px;
-            color: white;
-            }
-        #PostT:hover{
-            background:#54B385;
-                }
-        #Metaloids{
-            background: #5777C0;
-            border-radius: 5px;
-            border-color: #000;
-            margin: 2px;
-            color: white;
-            }
-        #Metaloids:hover{
-            background:#7D98D7;
-                }
-        #Gases{
-            background: #9e54f2;
-            border-radius: 5px;
-            border-color: #000;
-            margin: 2px;
-            color: white;
-            }
-        #Gases:hover{
-            background:#bd8ef2;
-                }
-        #LanBut{
-            background: #B33E96;
-            border-radius: 5px;
-            border-color: #000;
-            margin: 2px;
-            color: white;
-            }
-        #LanBut:hover{
-            background:#CA5FAF;
-                }
-        #ActBut{
-            background: #BF990F;
-            border-radius: 5px;
-            border-color: #000;
-            margin: 2px;
-            color: white;
-            }
-        #ActBut:hover{
-            background:#E4BD2C;
-                }
-        #EntGas{
-            background: #9b9b9b;
-            border-radius: 5px;
-            border-color: #000;
-            margin: 2px;
-            color: white;
-            }
-        #EntGas:hover{
-            background:#CFCCCC;
-                }
         #AlkMet{
-            background: #F16835;
+            background: #795548;
             border-radius: 5px;
             border-color: #000;
             margin: 2px;
             color: white;
+            font-family: "Roboto Light", serif;
             }
         #AlkMet:hover{
-            background:#FF8153;
+            background:#A1887F;
                 }
         #AlkEat{
-            background: #F44D52;
+            background: #4CAF50;
             border-radius: 5px;
             border-color: #000;
             margin: 2px;
             color: white;
+            font-family: "Roboto Light", serif;
             }
         #AlkEat:hover{
-            background:#FD6569;
+            background:#81C784;
                 }
         #TranMet{
-            background: #92613E;
+            background: #5C6BC0;
             border-radius: 5px;
             border-color: #000;
             margin: 2px;
             color: white;
+            font-family: "Roboto Light", sans-serif;
             }
         #TranMet:hover{
-            background:#B98650;
+            background:#9FA8DA;
+                }
+        #PostT{
+            background: #009688;
+            border-radius: 5px;
+            border-color: #000;
+            margin: 2px;
+            color: white;
+            font-family: "Roboto Light", serif;
+            }
+        #PostT:hover{
+            background:#4DB68C;
+                }
+        #Metaloids{
+            background: #FF9800;
+            border-radius: 5px;
+            border-color: #000;
+            margin: 2px;
+            color: white;
+            font-family: "Roboto Light", serif;
+            }
+        #Metaloids:hover{
+            background:#FFB74D;
+                }
+        #Gases{
+            background: #BA68C8;
+            border-radius: 5px;
+            border-color: #000;
+            margin: 2px;
+            color: white;
+            font-family: "Roboto Light", serif;
+            }
+        #Gases:hover{
+            background:#CE93D8;
+                }
+        #LanBut{
+            background: #EC407A;
+            border-radius: 5px;
+            border-color: #000;
+            margin: 2px;
+            color: white;
+            font-family: "Roboto Light", serif;
+            }
+        #LanBut:hover{
+            background:#F48FB1;
+                }
+        #ActBut{
+            background: #8D6E63;
+            border-radius: 5px;
+            border-color: #000;
+            margin: 2px;
+            color: white;
+            font-family: "Roboto Light", serif;
+            }
+        #ActBut:hover{
+            background:#BCAAA4;
+                }
+        #Halos{
+            background: #2979FF;
+            border-radius: 5px;
+            border-color: #000;
+            margin: 2px;
+            color: white;
+            font-family: "Roboto Light", serif;
+            }
+        #Halos:hover{
+            background:#82B1FF;
+                }
+        #EntGas{
+            background: #607D8B;
+            border-radius: 5px;
+            border-color: #000;
+            margin: 2px;
+            color: white;
+            font-family: "Roboto Light", serif;
+            }
+        #EntGas:hover{
+            background:#90A4AE;
                 }
         """
         namebutt = [""]*120

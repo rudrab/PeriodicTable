@@ -59,7 +59,7 @@ class MessageDialog(Gtk.Window):
                                  copyright=copyright,
                                  license_type=Gtk.License.GPL_3_0,
                                  authors=(["Rudra Banerjee"]),
-                                 website="https://github.com/rudrab/PeriodicTable")
+                                 website="https://rudrab.github.io/PeriodicTable/")
         # dialog.set_transient(Window)
         dialog.set_logo_icon_name("ptbl")
         # dialog.set_logo(GdkPixbuf.Pixbuf.new_from_file_at_size(

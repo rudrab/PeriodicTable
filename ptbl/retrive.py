@@ -38,12 +38,16 @@ class plotter():
                     break
                 if column == "Atomic Radius":
                     col = row[2]
+                    unit = " ($\AA$)"
                 if column == "Covalent Radius":
                     col = row[3]
+                    unit = " ($\AA$)"
                 if column == "Van der Waals Radius":
                     col = row[4]
+                    unit = " ($\AA$)"
                 if column == "Electron Affinity":
                     col = row[7]
+                    unit = " (kJ/mol)"
                 try:
                     float(col)
                     ind.append(int(row[0]))
@@ -68,14 +72,9 @@ class plotter():
         p_header.set_title(column)
         p_header.set_show_close_button(True)
         c = np.random.randint(1,50,size=120)
-        #  norm = plt.Normalize(1,4)
-        #  cmap = plt.cm.RdYlGn
-        #  fig,ax = plt.subplots()
-        #  sc = plt.scatter(x,y)
-        #  plt.plot(x,y)
         fig = Figure(figsize=(10,6), dpi=100)
         ax = fig.add_subplot(111)
-        ax.set_ylabel(column, fontsize=20)
+        ax.set_ylabel(column+unit, fontsize=20)
         ax.set_xlabel("Atomic Number")
         for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
                      ax.get_xticklabels() + ax.get_yticklabels()):
