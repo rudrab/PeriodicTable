@@ -1,6 +1,6 @@
 import gi
 gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk, Gio, Gdk
+from gi.repository import Gtk, Gio, Gdk, GLib
 import ptbl.elem_H as elem_H
 import ptbl.veggards as vegards
 import ptbl.retrive as plotter
@@ -9,6 +9,7 @@ import ptbl.dialogue as dialogue
 import sys
 import os
 
+data_dir = os.path.join(GLib.get_user_data_dir(), "ptbl")
 col = [['H', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'He'],
        ['Li', 'Be', '', '', '', '', '', '', '', '', '', '', 'B', 'C', 'N', 'O', 'F', 'Ne'],
        ['Na', 'Mg', '', '', '', '', '', '', '', '', '', '', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar'],
@@ -106,6 +107,9 @@ class GridWindow(Gtk.ApplicationWindow):
         eleaff_menu.connect("activate", self.Plotter.plot_trend, "Electron Affinity")
         self.add_action(eleaff_menu)
 
+        # Check or Create data_dir
+        if not os.path.isdir(data_dir):
+          os.mkdir(data_dir)
 
         style_provider = Gtk.CssProvider()
         css = """
@@ -300,6 +304,9 @@ class ptbl(Gtk.Application):
         Gtk.Application.do_startup(self)
         action = Gio.SimpleAction(name="utility")
         action.connect("activate", self.Messages.utility_activated)
+        self.add_action(action)
+        action = Gio.SimpleAction(name="settings")
+        action.connect("activate", self.Messages.settings)
         self.add_action(action)
         action = Gio.SimpleAction(name="about")
         action.connect("activate", self.Messages.about_activated)

@@ -8,10 +8,13 @@
 ###########################################
 import gi
 import ptbl
+import os, pickle
 gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk
+from gi.repository import Gtk, Gio, GLib
 from gi.repository import GdkPixbuf
+#  from gi.repository import Gtk, Gio
 
+data_dir = os.path.join(GLib.get_user_data_dir(), "ptbl")
 class MessageDialog(Gtk.Window):
 
 
@@ -71,6 +74,61 @@ class MessageDialog(Gtk.Window):
     def utility_activated(self, action,data=None):
         print("Utility Activated")
 
+    def settings(self,err1, err2):
+        self.config_file = os.path.join(data_dir,"config.dat")
+        Wpref =  Gtk.Window(border_width=5)
+        prefheader = Gtk.HeaderBar()
+        prefheader.set_subtitle("Preferences")
+        prefheader.set_title("Periodic Table")
+        Wpref.set_titlebar(prefheader)
+        prefheader.set_show_close_button(True)
+        menuicon = Gtk.Image.new_from_icon_name("preferences-desktop-symbolic", Gtk.IconSize.MENU);
+        Gtk.HeaderBar.pack_start(prefheader,menuicon);
+
+        Wpref.set_default_size(350, 350)
+        grid = Gtk.Grid(column_spacing=20)
+        Wpref.add(grid)
+        dir_label = Gtk.Label("Materials-Project api key")
+        self.user_dir =Gtk.Entry()
+        #  if os.path.isfile(self.config_file) and os.path.getsize(self.config_file)>0:
+          #  with shelve.open(self.config_file) as cnf:
+            #  key = cnf['key']
+          #  self.user_dir.set_text(key)
+        #  else:
+        self.user_dir.set_text("Material Project Key")
+        #  print(data_dir)
+        self.dir_button = Gtk.Button()
+        self.dir_button.set_always_show_image(True)
+        self.dir_button.set_image(image=Gtk.Image(
+                icon_name="document-save-symbolic"))
+        self.dir_button.set_image_position(1)
+        self.dir_button.connect("clicked", self.dic_save_clicked)
+        self.setting = Gio.Settings.new("org.example.ptbl")
+        #  self.setting.bind("base-folder", self.user_dir, "label", Gio.SettingsBindFlags.DEFAULT)
+        #  self.basedir = self.setting.get_value("api-key")
+        # print("From"+str(self.basedir))
+        grid.attach(dir_label, 0, 1, 1, 1)
+        grid.attach(self.user_dir, 1, 1, 1, 1)
+        grid.attach(self.dir_button, 2, 1, 2, 1)
+        Wpref.show_all()
+
+    def dic_save_clicked(self, name):
+      mytdict = {"Key":"value"}
+      self.keyval = self.user_dir.get_text()
+      print(self.keyval)
+      with open(self.config_file, "wb") as inf:
+        mytdict.update({"Key":self.keyval})
+        pickle.dump(mytdict, inf)
+
+      vals = pickle.load(open(self.config_file, "rb"))
+      print(vals)
+      #  with open(self.config_file, "rb") as inf:
+        #  pickle.load()
+
+      #  with open(config_file, "wb") as cnf:
+
+        #  pickle.dump()
+
 # class PopWindow():
 #     def popup(self):
 #         self.popup = Gtk.Window()
@@ -107,3 +165,8 @@ class FileDialog(Gtk.Window):
 
 def close_window(self, widget):
     widget.destroy()
+
+
+
+
+

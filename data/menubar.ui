@@ -13,6 +13,10 @@
         <attribute name='action'>app.utility</attribute>
       </item>
       <item>
+        <attribute name='label' translatable='yes'>_Settings</attribute>
+        <attribute name='action'>app.about</attribute>
+      </item>
+      <item>
         <attribute name='label' translatable='yes'>_About ptbl</attribute>
         <attribute name='action'>app.about</attribute>
       </item>
